@@ -47,8 +47,10 @@ func main() {
 		Handler: routes(&app),
 	}
 
+	log.Println("Application running on port", portNumber)
 	err = serv.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
 	}
+
 }
