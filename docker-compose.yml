@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+
+    go_playground:
+        image: go-docker
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        volumes: 
+            - ./:/app
